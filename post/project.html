@@ -1,9 +1,10 @@
+
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
         <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
-        <meta property="og:title" content="Γλώσσα προγραμματισμού Python | Project">
-        <script src="https://grcodeclub.github.io/javascript/jquery.js"></script>
+        <meta property="og:title" content="Γλώσσα προγραμματισμού Java | Project">
+        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
         <script src="https://grcodeclub.github.io/programming/menu.js"></script>
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
@@ -14,14 +15,11 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
-        <script src="https://grcodeclub.github.io/javascript/prism.js"></script>
+        <script src="https://grcodeclub.github.io/js/prism.js"></script>
         <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
         <title> GrCode Club</title>
 
         <style>
-   /* Προσαρμοσμένο στυλ για το HTML <select> στοιχείο */
-
-
 /* Κανόνες για το dropdown που εμφανίζεται μετά το κλικ */
 select option { 
     background-color: #000000; /* Χρώμα φόντου των επιλογών */
@@ -37,13 +35,11 @@ select option {
         <div class="container">
             <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
                 <div class="Header"> <!--Αρχή Επικεφαλίδας-->
-                    <table>
-                        <tr>
-                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
-                            <td><a href="https://github.com/GrCodeClub/python/edit/main/post/project.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
-                        </tr>
-                    </table> 
+                    <div class="layout">
+                            <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                            <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                            <div><a href="https://github.com/GrCodeClub/java/edit/main/post/project.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png" width="60px"></a></div>
+                    </div> 
                 </div> <!--Τέλος Επικεφαλίδας-->
            
                 <div class="Menu"> <!--Αρχή Menu-->
@@ -56,28 +52,21 @@ select option {
 
             <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
                 <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
-                    <table>
-                        <tr>
-                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                            <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
-                        </tr>
-                    </table> 
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    </div> 
                 </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
-                <table>  <!--Αρχή Menu σε κινητά-->
-                    <tr>
-                        <td>
-                            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-                            <label for="openSidebarMenu" class="sidebarIconToggle">
-                                <div class="spinner diagonal part-1"></div>
-                                <div class="spinner horizontal"></div>
-                                <div class="spinner diagonal part-2"></div>
-                            </label>
-                            <div id="sidebarMenu" style="overflow: auto;">
-                                <ul class="sidebarMenuInner"></ul>
-                            </div>
-                        </td>
-                    </tr>
-                </table> <!--Τέλος Menu σε κινητά-->
+                <!--Αρχή Menu σε κινητά-->
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                <label for="openSidebarMenu" class="sidebarIconToggle">
+                    <div class="spinner diagonal part-1"></div>
+                    <div class="spinner horizontal"></div>
+                    <div class="spinner diagonal part-2"></div>
+                </label>
+                <div id="sidebarMenu" style="overflow: auto;">
+                    <ul class="sidebarMenuInner"></ul>
+                </div><!--Τέλος Menu σε κινητά-->
             </section> <!--Τέλος εμφάνιση σε κινητά-->
 
             <div class="Text"> <!--Αρχή Κειμένου-->
@@ -87,7 +76,8 @@ select option {
                     <select id="code" name="code" style="color: white;border-radius: 10px; background-color: rgba(0, 0, 0, 0.795); border: none;
                     font-size: 18px; outline: none; cursor: pointer;">
                         <option value="-"></option>
-                        <option value="https://grcodeclub.github.io/java-code/Γραφικά/CalculatorApp.java">CalculatorApp.java</option>
+                        <option value="https://grcodeclub.github.io/python/platform.py">Platform.py
+                        </option>
                     </select>
                     <br><br>
                     <div class="bg_preview">
@@ -101,7 +91,7 @@ select option {
                         </div>
                         <div id="load">  </div>
                     </div>
-                    <script src="https://grcodeclub.github.io/javascript/preview_code.js"></script>
+                    <script src="https://grcodeclub.github.io/js/preview_code.js"></script>
             </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
 
@@ -110,7 +100,7 @@ select option {
         <!-- Footer -->
         <footer>
             <table class="add_footer"></table>
-            <script src="https://grcodeclub.github.io/javascript/footer.js"></script>       
+            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
         </footer>
     </body>
 </html>
