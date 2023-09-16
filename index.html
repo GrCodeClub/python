@@ -1,4 +1,3 @@
-
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -9,6 +8,10 @@
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css" />
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <script src="https://grcodeclub.github.io/js/prism.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/table.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
         <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
@@ -20,14 +23,12 @@
      <body class="programming">
         <div class="container">
             <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
-                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
-                    <table>
-                        <tr>
-                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                        <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
-                            <td><a href="https://github.com/GrCodeClub/python/edit/main/index.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></td>
-                        </tr>
-                    </table> 
+                <div class="Header" style=""> <!--Αρχή Επικεφαλίδας-->
+                    <div class="layout">
+                            <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                            <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                            <div><a href="https://github.com/GrCodeClub/python/edit/main/index.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></div>
+                    </div> 
                 </div> <!--Τέλος Επικεφαλίδας-->
            
                 <div class="Menu"> <!--Αρχή Menu-->
@@ -40,16 +41,13 @@
 
             <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
                 <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
-                    <table>
-                        <tr>
-                            <td><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></td>
-                        <td><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></td>
-                        </tr>
-                    </table> 
+                    <div class="layout">
+                        <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                        <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    </div> 
                 </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
-                <table>  <!--Αρχή Menu σε κινητά-->
-                    <tr>
-                        <td>
+                <div>  <!--Αρχή Menu σε κινητά-->
+                        <div>
                             <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
                             <label for="openSidebarMenu" class="sidebarIconToggle">
                                 <div class="spinner diagonal part-1"></div>
@@ -59,32 +57,36 @@
                             <div id="sidebarMenu" style="overflow: auto;">
                                 <ul class="sidebarMenuInner"></ul>
                             </div>
-                        </td>
-                    </tr>
-                </table> <!--Τέλος Menu σε κινητά-->
+                        </div>
+                </div> <!--Τέλος Menu σε κινητά-->
             </section> <!--Τέλος εμφάνιση σε κινητά-->
 
             <div class="Text"> <!--Αρχή Κειμένου-->
                 <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
                     <h1 class="title">Python</h1>
-                    <div class="search"><input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/></div>
-                  <div class="list-container">
-                    <ul class="list">
-                      <li><a href="./post/command.html" class="link">Βασικές Εντολές</a></li>
-                      <li><a href="./post/strings.html" class="link">Συμβολοσειρές</a></li>
+                    <p>Η Python είναι μια γλώσσα προγραμματισμού υψηλού επιπέδου.</p>
+                    <h3 class="highlight_blue">Εγκατασταση</h3>
+                    <p>Windows<br><u><a href="https://www.python.org/downloads/">Download</a></u></p>
+                    <p>Linux</p>
+                    <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">sudo apt-get install python3</code></pre></div>                
 
-                    </ul>
-                    <ul class="list">
-                        <li><a href="./post/library.html" class="link">Βιβλιοθήκες</a></li>
-                        <li><a href="./post/examples.html" class="link">Παραδείγματα</a></li>
-                      </ul>
-            
+                    <h3 class="highlight_blue">Installing Packages</h3>
+                    <div class="terminal"><pre class="command-line" data-prompt="c:\users\grcodeclub>" data-continuation-prompt=">>" data-filter-output="(out)" data-continuation-str=" `">
+                    <code class="language-powershell">pip install package_name</code></pre></div>
+                    <div class="search"><input type="input" class="form__field" placeholder="Αναζήτηση" id='searchInput'/></div>
+                    <div class="list-container">
+                        <ul class="list">
+                            <li><a href="./post/command.html" class="link">Βασικές Εντολές</a></li>
+                            <li><a href="./post/strings.html" class="link">Συμβολοσειρές</a></li>
+                        </ul>
+                        <ul class="list">
+                            <li><a href="./post/library.html" class="link">Βιβλιοθήκες</a></li>
+                            <li><a href="./post/examples.html" class="link">Παραδείγματα</a></li>
+                        </ul>
                   </div>
-                  <script src="https://grcodeclub.github.io/javascript/search/search_list.js"></script>
-                   
+                  <script src="https://grcodeclub.github.io/javascript/search/search_list.js"></script>     
                 </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
-
         </div> <!--Τέλος container-->
         
         <!-- Footer -->
