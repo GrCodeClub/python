@@ -1,1 +1,177 @@
 
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
+        <meta property="og:title" content="Γλώσσα προγραμματισμού Python">
+        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/programming/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <script src="https://grcodeclub.github.io/js/prism.js"></script>
+        <title> GrCode Club</title>
+    </head>
+
+     <body class="programming">
+        <div class="container">
+            <section class="show_desktop"> <!--Αρχή Εμφάνιση Υπολογιστή-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας-->
+                    <div class="layout">
+                            <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                            <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                            <div><a href="https://github.com/GrCodeClub/python/edit/main/post/import/os.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png" width="60px"></a></div>
+                    </div> 
+                </div> <!--Τέλος Επικεφαλίδας-->
+           
+                <div class="Menu"> <!--Αρχή Menu-->
+                    <div id="sidebarMenu" style="  overflow: auto;">
+                        <ul class="sidebarMenuInner"></ul>
+                    </div>
+                </div><!--Τέλος Menu-->
+
+            </section> <!--Τέλος Εμφάνιση Υπολογιστή-->
+
+            <section class="show_mobile">  <!--Αρχή εμφάνιση σε κινητά-->
+                <div class="Header"> <!--Αρχή Επικεφαλίδας σε κινητά-->
+                    <div class="layout">
+                            <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                            <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    </div> 
+                </div> <!--Τέλος Επικεφαλίδας σε κινητά -->
+                <table>  <!--Αρχή Menu σε κινητά-->
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+                            <label for="openSidebarMenu" class="sidebarIconToggle">
+                                <div class="spinner diagonal part-1"></div>
+                                <div class="spinner horizontal"></div>
+                                <div class="spinner diagonal part-2"></div>
+                            </label>
+                            <div id="sidebarMenu" style="overflow: auto;">
+                                <ul class="sidebarMenuInner"></ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table> <!--Τέλος Menu σε κινητά-->
+            </section> <!--Τέλος εμφάνιση σε κινητά-->
+
+            <div class="Text"> <!--Αρχή Κειμένου-->
+                <a href="../index.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
+                <div class="text_bg"> <!-- Αρχή Background Κειμένου-->
+                    <h1 class="title">Βιβλιοθήκη OS</h1>
+
+                    <p>
+                        Το  os στην Python παρέχει πολλές λειτουργίες για τον έλεγχο και τη διαχείριση του λειτουργικού συστήματος. 
+                    </p>
+                    <h3 class="highlight_blue">Εισαγωγή Βιβλιοθήκης</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os</code></pre></div></div>
+
+                    <h3 class="highlight_blue">Εμφάνιση τρέχων κατάλογος</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+directory = os.getcwd()
+print("Ο τρέχων κατάλογος είναι:", directory)</code></pre></div></div>
+
+
+                    <h3 class="highlight_blue">Λίστα αρχείων και φακέλων σε έναν κατάλογο</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+dir_path = "./"
+# Λίστα αρχείων και φακέλων στον καθορισμένο κατάλογο
+files = os.listdir(dir_path)
+for item in files:
+    print(item)</code></pre></div></div>
+
+                    <h3 class="highlight_blue">Δημιουργία φακέλου</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+dir_name = "name_dir"
+# Δημιουργία του φακέλου στον τρέχοντα κατάλογο
+os.mkdir(dir_name)
+</code></pre></div></div>
+
+                    <h3 class="highlight_blue">Διαγραφή φακέλου (με περιεχόμενο)</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+dir_name = "name_dir"
+# Διαγραφή του φακέλου και του περιεχομένου του
+os.rmdir(dir_name)</code></pre></div></div>
+
+                    <h3 class="highlight_blue">Ελέγχος ύπαρξης ενός αρχείου ή φακέλου</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+path_to_check = "./name_dir"
+if os.path.exists(path_to_check):
+    print(f"{path_to_check} υπάρχει.")
+else:
+    print(f"{path_to_check} δεν υπάρχει.")</code></pre></div></div>
+
+                    <h3 class="highlight_blue">Αλλαγή του ονόματος ενός αρχείου ή φακέλου</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+old_name = "old_name.txt"
+new_name = "new_name.txt"
+os.rename(old_name, new_name)</code></pre></div></div>
+
+                    <h3 class="highlight_blue">Εκτέλεση ενός εξωτερικού προγράμματος ή command</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+command_to_run = "dir"  # Παράδειγμα ενός Windows command
+result = os.system(command_to_run)
+# Ελέγξτε το αποτέλεσμα της εκτέλεσης
+if result == 0:
+    print(f"Η εντολή {command_to_run} εκτελέστηκε με επιτυχία.")
+else:
+    print(f"Η εντολή {command_to_run} απέτυχε με κωδικό εξόδου {result}.")
+</code></pre></div></div>
+
+                    <h3 class="highlight_blue">Εύρεση του path ενός αρχείου ή Φακέλου</h3>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+name = "name_dir"
+path = os.path.abspath(name)
+print(f"Το path του {name} είναι: {path}")</code></pre></div></div>
+
+                    <h3 class="highlight_blue">Διεργασίες </h3>
+                    <p>Windows</p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+# Εκτελούμε την εντολή "tasklist" και αποθηκεύουμε τα αποτελέσματα σε ένα string
+process_list = os.popen("tasklist").read()
+# Εκτυπώνουμε τη λίστα των διεργασιών
+print(process_list)</code></pre></div></div>
+                <p>Linux</p>
+                <div class="bg_preview">
+                <div  class="line-numbers"><pre class="code_editor"><code class="language-python">import os
+# Εκτελούμε την εντολή "ps" και αποθηκεύουμε τα αποτελέσματα σε ένα string
+process_list = os.popen("ps").read()
+# Εκτυπώνουμε τη λίστα των διεργασιών
+print(process_list)</code></pre></div></div>
+
+                <h3 class="highlight_blue"></h3>
+                <div class="bg_preview">
+                <div  class="line-numbers"><pre class="code_editor"><code class="language-python"></code></pre></div></div>
+
+
+
+            </div><!-- Τέλος Background Κειμένου-->
+            </div> <!--Τέλος Κειμένου-->
+
+        </div> <!--Τέλος container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
+        </footer>
+    </body>
+</html>
