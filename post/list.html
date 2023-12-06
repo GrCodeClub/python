@@ -101,14 +101,32 @@ print(num_list.index(3))</code></pre></div></div>
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
 print(len(num_list)) # Μήκος της λίστας</code></pre></div></div>
 
-                    <h3 class="highlight_black">Προσθήκη και αφαίρεση στοιχείων</h3>
+                    <h3 class="highlight_black">Προσθήκη στοιχείων</h3>
                     <p>Με την μέθοδο append() να προσθέσουμε ένα στοιχείο στο τέλος της λίστα.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
 num_list.append(6)  # Προσθήκη του 6 στο τέλος της λίστας
 print(num_list) </code></pre></div></div>
 
-                    <h3 class="highlight_black">Έλεγχος αν υπαίτιο στοιχείο στην λίστα</h3>
+                     <h3 class="highlight_black">Αφαίρεση Στοιχείων</h3>
+                    <p>Χρησιμοποιούμε την μέθοδο clear() για να αφαιρέσουμε ΟΛΑ τα στοιχεία από μια λίστα. </p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
+print(num_list)
+num_list.clear()
+print(num_list)</code></pre></div></div>
+
+                    <p>Mε την μέθοδο remove() ή pop() αφαιρούμε στοιχεία από την λίστα. </p>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
+num_list.remove(4)  # Αφαίρεση του 4 από τη λίστα
+print(num_list)</code></pre></div></div>
+                    <div class="bg_preview">
+                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
+popped_element = num_list.pop()  # Αφαίρεση και επιστροφή του τελευταίου στοιχείου
+print(num_list)</code></pre></div></div>
+
+                    <h3 class="highlight_black">Έλεγχος αν υπάρχει το στοιχείο στην λίστα</h3>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
 if 5 in num_list:
@@ -195,37 +213,15 @@ print(reversed_list)
 new_list=num_list[::-1]
 print(new_list)</code></pre></div></div>
 
-                   
-
                     <p>Χρησιμοποιούμε την μέθοδο reverse() για αντιστρέψουμε την θέση των στοιχείων μέσα στην λίστα.</p>
                     <div class="bg_preview">
                     <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
 num_list.reverse()
 print(num_list)</code></pre></div></div>
 
-                    <h3 class="highlight_black">Αφαίρεση Στοιχείων</h3>
-                    <p>Χρησιμοποιούμε την μέθοδο clear() για να αφαιρέσουμε ΟΛΑ τα στοιχεία από μια λίστα. </p>
-                    <div class="bg_preview">
-                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
-print(num_list)
-num_list.clear()
-print(num_list)</code></pre></div></div>
+                   
 
-                    <p>Mε την μέθοδο remove() ή pop() αφαιρούμε στοιχεία από την λίστα. </p>
-                    <div class="bg_preview">
-                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
-num_list.remove(4)  # Αφαίρεση του 4 από τη λίστα
-print(num_list)</code></pre></div></div>
-                    <div class="bg_preview">
-                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]
-popped_element = num_list.pop()  # Αφαίρεση και επιστροφή του τελευταίου στοιχείου
-print(num_list)</code></pre></div></div>
-
-                    <p></p>
-                    <div class="bg_preview">
-                    <div  class="line-numbers"><pre class="code_editor"><code class="language-python">num_list = [1, 2, 3, 4, 5]</code></pre></div></div>
-
-                </div><!-- Τέλος Background Κειμένου-->
+                  </div><!-- Τέλος Background Κειμένου-->
             </div> <!--Τέλος Κειμένου-->
         </div> <!--Τέλος container-->
         
