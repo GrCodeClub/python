@@ -1,0 +1,97 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta property="og:image" content="https://grcodeclub.github.io/file/background/3.png"/>
+        <meta property="og:title" content="Γλώσσα προγραμματισμού Python | Terminal">
+        <script src="https://grcodeclub.github.io/js/jquery.js"></script>
+        <script src="https://grcodeclub.github.io/programming/post/menu.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/header_and_footer.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/main.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/text.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/layout.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/code_bg.css" />
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/prism.css" />
+        <script src="https://grcodeclub.github.io/js/prism.js"></script>
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/list.css">
+        <link rel="stylesheet" href="https://grcodeclub.github.io/css/body.css">
+        <link rel='icon' type='image/png' href='https://grcodeclub.github.io/file/logo/black_logo.png'>
+        <title> GrCode Club</title>
+    </head>
+
+    <body class="programming">
+
+    <div class="container">
+        <section class="show_desktop"> <!--ΑΡΧΗ show_desktop-->
+            <div class="Header"> <!--ΑΡΧΗ Header show_desktop-->
+                <div class="layout">
+                    <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                    <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                    <div><a href="https://github.com/GrCodeClub/python/edit/main/post/terminal.html" target="_blank"><img src="https://grcodeclub.github.io/file/logo_and_graphic/edit.png"  width="60px"></a></div>
+                </div> 
+            </div> <!--ΤΕΛΟΣ Header show_desktop-->    
+            <div class="Menu"> <!--ΑΡΧΗ Menu show_desktop-->
+                <div id="sidebarMenu" style="  overflow: auto;">
+                    <ul class="sidebarMenuInner"> </ul>
+                  </div><!--Menu end-->      
+            </div><!--ΤΕΛΟΣ Menu show_desktop-->
+        </section> <!--ΤΕΛΟΣ show_desktop-->
+
+        <section class="show_mobile">  <!--ΑΡΧΗ show_mobile-->
+            <div class="Header"> <!--ΑΡΧΗ Header show_mobile-->
+                <div class="layout">
+                    <div><img src="https://grcodeclub.github.io/file/logo_and_graphic/logo.png" class="logo"/></div>
+                    <div><h1 class="header_text"><a href="https://grcodeclub.github.io/"><span class="header_text">GrCode Club</span></a></h1></div>
+                </div> 
+            </div> <!--ΤΕΛΟΣ Header show_mobile-->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner"></ul>
+            </div>
+        </section> <!--ΤΕΛΟΣ show_mobile-->
+
+
+        <div class="Text"> <!--ΑΡΧΗ Text-->
+            <a href="../index.html"><img src="https://grcodeclub.github.io/file/logo_and_graphic/back.png" class="logo_back"></a>
+            <div class="text_bg">
+            <h1 class="title">Python3 | Terminal</h1>
+
+            <h3 class="highlight_black">Web Server</h3>
+            <p>Δημιουργήστε έναν HTTP Server</p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">python3 -m http.server 8000</code></pre></div>               
+            <p>Για να εκκινήσετε τον HTTP server στην διεύθυνση IP του υπολογιστή σας, μπορείτε να καθορίσετε την επιθυμητή διεύθυνση IP ως όρισμα της εντολής.</p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">python3 -m http.server --bind 192.168.1.1</code></pre></div>                
+            
+            <h3 class="highlight_black">Convert</h3>
+            <p>Μετατροπή από δεκαδικό σε άλλα αριθμητικά συστήματα</p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">python3 -c 'print(bin(42), oct(42), hex(42))'</code></pre></div>                
+            <p>Μετατροπή από δυαδικό σε δεκαδικό</p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">python3 -c 'print(int("1101", 2))'</code></pre></div>                
+            <p>Μετατροπή από άλλα αριθμητικά συστήματα σε δεκαδικό</p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">python3 -c 'print(int("1010", 2), int("52", 8), int("1A", 16))'</code></pre></div>                
+            <p>Base64</p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">echo -n "Hello, World!" | python -m base64
+echo -n "SGVsbG8sIFdvcmxkIQ==" | python -m base64 -d</code></pre></div>
+
+            <h3 class="highlight_black">Μετατροπή αρχείων</h3>
+            <p><u>XML</u><br>Το module xml.etree.ElementTree μπορεί να χρησιμοποιηθεί για τη μετατροπή αρχείων XML σε Python δομές δεδομένων και αντίστροφα.</p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">python -m xml.etree.ElementTree my_xml_file.xml</code></pre></div>                
+            <p>Μετατροπή αρχείων Markdown σε HTML</p>
+            <div class="terminal"><pre class="command-line" data-user="grcodeclub" data-host="linux"><code class="language-bash">python -m markdown2 input.md > output.html</code></pre></div>                
+        </div>
+        </div> <!--ΤΕΛΟΣ Text-->
+
+    </div> <!--ΤΕΛΟΣ container-->
+        
+        <!-- Footer -->
+        <footer>
+            <table class="add_footer"></table>
+            <script src="https://grcodeclub.github.io/js/footer.js"></script>       
+        </footer>
+    </body>
+</html>
